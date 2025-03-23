@@ -1,7 +1,7 @@
 {
-    "name": "reactjs-vite-tailwind-vercel",
+    "name": "world-map-explorer",
     "version": "1.0.0",
-    "description": "ReactJS app with Vite, Tailwind",
+    "description": "Interactive world map with flags and folk stories",
     "type": "module",
     "scripts": {
         "dev": "vite",
@@ -12,7 +12,10 @@
     "dependencies": {
         "@sentry/browser": "^8.41.0",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "react-simple-maps": "^3.0.0",
+        "d3-geo": "^3.1.0",
+        "topojson-client": "^3.1.0"
     },
     "devDependencies": {
         "@vitejs/plugin-react": "^4.3.4",

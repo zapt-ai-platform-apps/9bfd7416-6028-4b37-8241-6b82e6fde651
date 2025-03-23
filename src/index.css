@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+#root {
+  height: 100%;
+}
+
+.country-info {
+  max-width: 90vw;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+@media (max-width: 640px) {
+  .country-info {
+    width: 90vw;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%) !important;
+  }
+}
