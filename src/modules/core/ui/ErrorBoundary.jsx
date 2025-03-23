@@ -1,6 +1,10 @@
 import React from 'react';
 import * as Sentry from "@sentry/browser";
 
+/**
+ * Error Boundary component that catches errors in its child components
+ * and displays a fallback UI instead of crashing the app
+ */
 class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);

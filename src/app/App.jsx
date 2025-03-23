@@ -1,9 +1,14 @@
-import React from 'react';
-import ErrorBoundary from './components/ErrorBoundary';
-import Map from './components/Map';
-import ZaptBadge from './components/ZaptBadge';
+import React, { useEffect } from 'react';
+import { WorldMap } from '@/modules/map';
+import ZaptBadge from '@/modules/ui/ZaptBadge';
+import ErrorBoundary from '@/modules/core/ui/ErrorBoundary';
+import { initializeModules } from '@/modules';
 
 export default function App() {
+  useEffect(() => {
+    initializeModules();
+  }, []);
+
   return (
     <div className="min-h-screen h-full bg-gray-100 text-gray-900 flex flex-col">
       <header className="bg-blue-600 text-white p-4 shadow-md">
@@ -28,7 +33,7 @@ export default function App() {
             </div>
           }
         >
-          <Map />
+          <WorldMap />
         </ErrorBoundary>
       </main>
       

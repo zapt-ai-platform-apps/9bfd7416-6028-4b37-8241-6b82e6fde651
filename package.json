@@ -5,9 +5,10 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
+        "build": "vitest run && vite build",
         "serve": "vite preview",
-        "start": "vite --host"
+        "start": "vite --host",
+        "test": "vitest run"
     },
     "dependencies": {
         "@sentry/browser": "^8.41.0",
@@ -15,7 +16,8 @@
         "react-dom": "^18.2.0",
         "react-simple-maps": "^3.0.0",
         "d3-geo": "^3.1.0",
-        "topojson-client": "^3.1.0"
+        "topojson-client": "^3.1.0",
+        "zod": "^3.22.4"
     },
     "devDependencies": {
         "@vitejs/plugin-react": "^4.3.4",
@@ -23,6 +25,8 @@
         "postcss": "^8.4.47",
         "tailwindcss": "^3.4.13",
         "vite": "^5.4.7",
-        "@sentry/vite-plugin": "^2.23.0"
+        "@sentry/vite-plugin": "^2.23.0",
+        "vitest": "^1.5.0",
+        "jsdom": "^24.0.0"
     }
 }

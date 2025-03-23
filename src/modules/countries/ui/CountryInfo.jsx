@@ -1,5 +1,12 @@
 import React from 'react';
 
+/**
+ * Component for displaying detailed country information
+ * @param {Object} props
+ * @param {Object} props.country - Country data object
+ * @param {Object} props.position - Position to display the popup
+ * @param {Function} props.onClose - Function to call when closing the popup
+ */
 const CountryInfo = ({ country, position, onClose }) => {
   const formatNumber = (num) => {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");

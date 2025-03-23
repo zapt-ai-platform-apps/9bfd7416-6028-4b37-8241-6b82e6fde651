@@ -1,5 +1,8 @@
 import React from 'react';
 
+/**
+ * Component for displaying the "Made on ZAPT" badge
+ */
 const ZaptBadge = () => {
   return (
     <a 
