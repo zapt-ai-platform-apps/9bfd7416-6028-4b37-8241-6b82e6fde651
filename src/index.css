@@ -11,6 +11,8 @@ html, body {
 
 #root {
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .country-info {
@@ -27,4 +29,22 @@ html, body {
     top: 50% !important;
     transform: translate(-50%, -50%) !important;
   }
+}
+
+/* Ensure the map container is visible */
+.rsm-svg {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Fix for ComposableMap to ensure it fills the available space */
+.rsm-geographies {
+  width: 100%;
+  height: 100%;
+}
+
+/* Ensure proper rendering of the chat-widget container if present */
+.chat-widget {
+  z-index: 1000;
 }

@@ -37,6 +37,9 @@ if (import.meta.env.VITE_PUBLIC_APP_ENV !== 'development') {
   document.head.appendChild(script);
 }
 
+// Log app initialization
+console.log('World Map Explorer initialized');
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
